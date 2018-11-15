@@ -124,6 +124,7 @@ export default class AlphaScrollFlatList extends Component {
                 />
                 {this.props.hideSideBar ? null : (
                     <AlphabeticScrollBar 
+                        style={this.props.alphabetContainerStyle}
                         isPortrait={this.state.isPortrait} 
                         reverse={this.props.reverse} 
                         activeColor={this.props.activeColor}
