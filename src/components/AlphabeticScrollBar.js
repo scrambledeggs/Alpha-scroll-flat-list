@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, PanResponder} from 'react-native';
 import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
-import ResponsiveFontSize from 'react-native-responsive-fontsize';
+import RF from 'react-native-responsive-fontsize';
 
 const ALPHABET = '#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
@@ -96,7 +96,7 @@ class AlphabeticScrollBar extends Component {
                         <Text style={{
                             ...styles.letter,
                             ...this.props.fontColor ? {color: this.props.fontColor} : {},
-                            fontSize: ResponsiveFontSize(this.props.isPortrait ? 2 : 1.6) * this.props.fontSizeMultiplier, 
+                            fontSize: RF(this.props.isPortrait ? 2 : 1.6) * this.props.fontSizeMultiplier,
                         }}>
                             {letter}
                         </Text>
