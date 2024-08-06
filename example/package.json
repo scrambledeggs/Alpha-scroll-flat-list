@@ -35,7 +35,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-json-editor": "^2.4.2",
     "gulp-run": "^1.7.1",
-    "react": "16.3.1",
+    "react": "16.14.0",
     "react-native": "~0.55.2",
     "run-sequence": "^2.2.1"
   },
